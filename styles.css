@@ -1,6 +1,193 @@
 /* CSS: Cascading Style Sheet */
 /* Defines the visuals of a page */
 
-h1 {
-    color: blue;
+
+/* general */
+body, p, h1, h2, input, textarea {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+
+/* navbar */
+#navbar {
+    background-color: #141D29;
+    color: whitesmoke;
+    padding: 0 15px;
+    height: 60px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav {
+    display: inline-block;
+}
+
+#navbar h2 {
+    margin: 0;
+    line-height: 60px;
+    margin-left: 75px;
+}
+
+#navbar img {
+    height: 56px;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 2px;
+}
+
+#navbar nav {
+    float: right;
+}
+
+#navbar ul {
+    float: right;
+    margin-top: 20px;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar-list li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navbar-list li a:hover {
+    border-bottom: 1px solid whitesmoke;
+}
+
+
+/* banner */
+#main-banner {
+    height: 25vh;
+    background-image: url('./img/universe.jpg');
+    background-size: cover;
+    padding-top: 15vh;
+}
+
+#banner-info {
+    width: 80vh;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#banner-info p {
+    padding-top: 18vh;
+    text-align: end;
+}
+
+
+/* about */
+#about-section {
+    text-align: center;
+    background-color: #141D29;
+    color: whitesmoke;
+    padding-top: 50px;
+    height: 30vh;
+}
+
+#about-section h2 {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    line-height: 45px;
+    width: 80%;
+}
+
+#about-section p {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+}
+
+
+/* features */
+#features-section {
+    margin-top: -50px;
+    background-color: whitesmoke;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+
+#features-section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.features-container {
+    flex: 1 1 1;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.features-container h3 {
+    color: #141D29;
+    font-size: 20px;
+}
+
+.features-container img {
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-top: 1px solid #141D29;
+    border-left: 1px solid #141D29;
+    border-bottom: 3px solid #141D29;
+    border-right: 3px solid #141D29;
+}
+
+.features-container p {
+    color: #141D29;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* footer */
+footer {
+    padding: 50px 0;
+    background-color: #141D29;
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    margin: 30px 0;
+}
+
+footer p {
+    margin-top: 25px;
+}
+
+footer form {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer input, footer textarea {
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
+footer .detail {
+    font-weight: bold;
 }

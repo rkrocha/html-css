@@ -8,20 +8,80 @@
 <!-- head contains config tags (title and meta tags), tags that call files -->
 <!-- does not show up on page -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
-
-    <!-- Adds a CSS stylesheet to page -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Adds basic compatibility with mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World!</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <!-- Adds a CSS stylesheet to page -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <!-- body has the contents of the page -->
 <!-- everything that shows up on page -->
 <body>
-    <h1>Hello, World!</h1>
-    <hr>
-    <p>This is a paragraph!</p>
-</body>
-</html>
+  <!-- navbar -->
+  <header id="navbar">
+    <img src="img/earth.svg" alt="planet earth">
+    <h2>Hello, World!</h1>
+      <nav>
+        <ul id="navbar-list">
+          <li><a href="#">This world</a></li>
+          <li><a href="#">Other worlds</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+    <!-- banner -->
+    <main>
+      <div id="main-banner">
+        <div id="banner-info">
+          <h1>Welcome to Sector ZZ9 Plural Z Alpha*</h1>
+          <p>*: Also known as "Earth"</p>
+        </div>
+      </div>
+      
+      <!-- about -->
+      <section id="about-section">
+        <h2>Earth is a giant supercomputer designed to find the Ultimate Question of Life, the Universe and Everything.</h2>
+        <p>Designed by Deep Thought and built by the Magratheans, it is commonly mistaken for a planet, especially by the ape descendants who live on it. It is situated far out in the uncharted backwaters of the unfashionable end of the Western Spiral Arm of the Galaxy.</p>
+      </section>
+    </main>
+    
+    <!-- features -->
+    <section id="features-section">
+      <div class="container">
+        <div class="features-container">
+          <img src="img/ruler.svg" alt="ruler">
+          <h3>Shape</h3>
+          <p>Mostly spherical</p>
+          <p>Diameter: 12756 km</p>
+        </div>
+        <div class="features-container">
+          <img src="img/pressure.svg" alt="vise">
+          <h3>Atmosphere</h3>
+          <p>Pressure: ~1 atm</p>
+          <p>Temperature: -50 to 50 ºC</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h2>Send us a message</h2>
+      <p>Don't send us marketing material.</p>
+      <img src="img/mail.svg" alt="mail">
+      <form action="" method="">
+        <input type="text" name="Name" placeholder="Your name">
+        <input type="text" name="Email" placeholder="Your e-mail">
+        <textarea name="msg" placeholder="Type your message..."></textarea>
+        <input type="submit" value="Send">
+      </form>
+      <p>Developed by the <span class="detail">Magratheans</span></p>
+    </footer>
+  </body>
+  </html>
