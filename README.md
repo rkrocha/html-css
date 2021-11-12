@@ -1,1 +1,1 @@
-[Check out the page.](https://rkrocha.github.io/html-css/index.html) 
+[This page can be accessed through Github Pages.](https://rkrocha.github.io/html-css/index.html) 
